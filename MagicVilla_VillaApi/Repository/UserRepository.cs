@@ -67,7 +67,7 @@ namespace MagicVilla_VillaApi.Repository
 
         public async Task<UserDTO> Register(RegisterationRequestDTO registerationRequestDTO)
         {
-            registerationRequestDTO.Role = "user";
+            registerationRequestDTO.Role = "admin";
             ApplicationUser user = new()
             {
                 UserName = registerationRequestDTO.UserName,
